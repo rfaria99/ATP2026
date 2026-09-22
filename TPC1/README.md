@@ -3,7 +3,7 @@
 ### __Autor:__
  Ricardo Afonso Silva de Faria, A110398 
  
- ![Imagem Autor](/../ATP2026/ParaMD2.jpg)
+ ![Imagem Autor](ParaMD2.jpg)
 
 ### __Resumo:__
  O primeiro TPC é a resolução do nível 10 do Maze e de fazer um desenho no Turtle no site do block party.
