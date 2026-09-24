@@ -13,7 +13,13 @@ while resposta != "n":
         resposta = int(input("Introduza um inteiro para tentar adivinhar o nº aleatório: "))
         while resposta != numero:
             contador +=1
-            if resposta > numero:
+            if resposta > 100:
+                print ("A sua resposta ultrapassa o limite máximo de 100")
+                resposta = int(input("Introduza um inteiro para tentar adivinhar o nº aleatório: "))
+            elif resposta < 0:
+                print ("A sua resposta é menor que o limite mínimo de 0")
+                resposta = int(input("Introduza um inteiro para tentar adivinhar o nº aleatório: "))
+            elif resposta > numero:
                 resposta = int(input("O número é menor, tente novamente: "))
             else:
                 resposta = int(input("O número é maior, tente novamente: "))
@@ -28,8 +34,10 @@ while resposta != "n":
                 "-Errou, o númerou que pensei é menor\n- ")  
             if resposta == "Errou, o número que pensei é maior":
                 limite_min = numero2 + 1
-            else:
+            elif resposta == "Errou, o número que pensei é menor":
                 limite_max = numero2 - 1
+            else:
+                print ("A resposta que deu não é válida")
         print (f"A máquina acertou em {contador} tentativas")
     else:
         print ("Não existe o que escolheu.")
