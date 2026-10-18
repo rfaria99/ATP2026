@@ -60,7 +60,7 @@ def guardarTurma (l, fnome):
 def carregarTurma (fnome):
     l = []
     file = open(fnome,'r')
-    next(file)
+    file.readline()
     for line in file:
         notaT = []
         nome,id,notas = line.split('||')
